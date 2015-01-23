@@ -10,9 +10,11 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
-    %%    message_mocker_sup:start_link().
-    Pid = spawn_link(fun() -> apply(message_mocker, start, _StartArgs) end),
+    io:format("Hello,Started ~n"),
+    Pid = spawn(fun() -> erlang:apply(message_mocker,start_link,_StartArgs) end),
     {ok, Pid}.
+
+%%    message_mocker_sup:start_link().
 
 stop(_State) ->
     ok.

@@ -23,5 +23,6 @@ start_link() ->
 %% ===================================================================
 
 init([]) ->
-    {ok, { {one_for_one, 5, 10}, []} }.
+    MessageMocker = ?CHILD(message_mocker, worker),
+    {ok, { {one_for_one, 5, 10}, [MessageMocker]} }.
 

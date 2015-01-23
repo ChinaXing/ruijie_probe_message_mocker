@@ -1,0 +1,8 @@
+run_erl [15313] Thu Jan 22 16:07:54 2015
+Args before exec of shell:
+run_erl [15313] Thu Jan 22 16:07:54 2015
+argv[0] = sh
+run_erl [15313] Thu Jan 22 16:07:54 2015
+argv[1] = -c
+run_erl [15313] Thu Jan 22 16:07:54 2015
+argv[2] = exec /home/chinaxing/ssd/Code/erlang/apps/message_mocker_app/rel/message_mocker_app/bin/message_mocker_app console \'\' 
